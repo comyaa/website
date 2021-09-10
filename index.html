@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Absentites list generator</title>
+    <style>
+      #xxx{
+        
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    
+    
+}
+#xxxr{
+        
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-gap: 10px;
+        
+        
+    }
+.www{
+
+  width: 200px;
+  height: 30px;
+}
+textarea {
+  width: 400px;
+  height: 500px;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <h2>Csit Absenties list Message Generator</h2>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js" defer> </script>
+<div id="xxx">
+    
+    
+    
+</div>
+    
+   
+
+
+<div id="xxxy">
+  <h3>select co-host</h3>
+  <button type="button" class="btn btn-primary c" data-toggle="button" aria-pressed="false" autocomplete="off">
+    P.Nagarani
+  </button>
+  <button type="button" class="btn btn-primary c" data-toggle="button" aria-pressed="false" autocomplete="off">
+    S.Bhargav
+  </button>
+  <button type="button" class="btn btn-primary c" data-toggle="button" aria-pressed="false" autocomplete="off">
+    M.Akhil
+  </button>
+  <button type="button" class="btn btn-primary c" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Vasantha Lakshmi
+  </button>
+</div>
+<h3>select host</h3>
+<div class="xxxz" id="xxxr">
+  
+  <button type="button" class="btn btn-primary s" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Dr.Hn.Lakshmi
+  </button>
+  <button type="button" class="btn btn-primary s" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Avinash Amaranayani
+  </button>
+  <button type="button" class="btn btn-primary s" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Dr.A.Srinivasa Reddy
+  </button>
+  <button type="button" class="btn btn-primary s" data-toggle="button" aria-pressed="false" autocomplete="off">
+    S.Veenila Krishna
+  </button>
+  <button type="button" class="btn btn-primary s" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Dr.R.Raja
+  </button>
+  
+    
+</div>
+
+<div class="hour">
+  <h3>select hour</h3>
+  <button type="button" class="btn btn-primary h" data-toggle="button" aria-pressed="false" autocomplete="off">
+    1
+  </button>
+  <button type="button" class="btn btn-primary h" data-toggle="button" aria-pressed="false" autocomplete="off">
+  2
+  </button>
+  <button type="button" class="btn btn-primary h" data-toggle="button" aria-pressed="false" autocomplete="off">
+    3
+  </button>
+  <button type="button" class="btn btn-primary h" data-toggle="button" aria-pressed="false" autocomplete="off">
+   4
+  </button>
+  <button type="button" class="btn btn-primary h" data-toggle="button" aria-pressed="false" autocomplete="off">
+    5
+  </button>
+  </div>
+  <h3>select Subject</h3>
+  <div class="xxxsub " id="xxx">
+  
+  <button type="button" class="btn btn-primary sub" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Computer Networks
+  </button>
+  <button type="button" class="btn btn-primary sub" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Cyber Security
+  </button>
+  <button type="button" class="btn btn-primary sub" data-toggle="button" aria-pressed="false" autocomplete="off">
+    CiDS
+  </button>
+  <button type="button" class="btn btn-primary sub" data-toggle="button" aria-pressed="false" autocomplete="off">
+    EWT
+  </button>
+  <button type="button" class="btn btn-primary sub" data-toggle="button" aria-pressed="false" autocomplete="off">
+  ACD
+  </button>
+  <button type="button" class="btn btn-primary sub" data-toggle="button" aria-pressed="false" autocomplete="off">
+    UHV
+    </button>
+  
+    <button type="button" class="btn btn-primary sub" data-toggle="button" aria-pressed="false" autocomplete="off">
+      MEFA
+      </button>
+    </div>
+
+    <br>
+    <br>
+  <button class="www" onclick="getAbsenties()">Generate Message</button>
+  <br>
+  <br>
+  <br>
+  <form >
+
+    <textarea id="rrr">
+
+
+    </textarea>
+     
+   </form>
+   <button class="www" onclick="CopytoClipBoard()">Copy</button>
+</body>
+</html>
