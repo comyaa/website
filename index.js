@@ -143,7 +143,7 @@ function getAbsenties() {
 
 }
 
-function share(message) {
+function share() {
   
 
     
