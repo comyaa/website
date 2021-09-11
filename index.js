@@ -48,7 +48,7 @@ function getHost() {
         s = z.getAttribute("aria-pressed");
         if (s === "true") {
             var z1 = z.innerHTML;
-            return "Host: " + z1 ;
+            return "Host: " + z1.trim() ;
             
         }
 
@@ -65,7 +65,7 @@ function getCoHost() {
         s = z.getAttribute("aria-pressed");
         if (s === "true") {
             var z1 = z.innerHTML;
-            return "Co-Host:" + z1 ;
+            return "Co-Host:" + z1.trim() ;
 
         }
 
@@ -82,7 +82,7 @@ function getSubject() {
         s = z.getAttribute("aria-pressed");
         if (s === "true") {
             var z1 = z.innerHTML;
-            return "Subject:    "+z1 ;
+            return "Subject:    "+z1.trim() ;
 
         }
 
@@ -100,7 +100,7 @@ function getHour() {
         s = z.getAttribute("aria-pressed");
         if (s === "true") {
             var z1 = z.innerHTML;
-            return z1 + "Hour Attendance";
+            return z1.trim()+ "Hour Attendance";
 
         }
     }
