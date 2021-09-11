@@ -1,4 +1,4 @@
-
+var message;
 
 function greeting(){
 var day = new Date();
@@ -138,14 +138,15 @@ function getAbsenties() {
     var Year2="Year : BTech III year I Sem";
 
     document.getElementById("rrr").value = greeting()+"\n"+getHour() +"\n"+r11+"\n"+Date1+"\n"+Year2+"\n"+getSubject() +"\n"+getHost() + "\n" +getCoHost()+"\n"+"Present:"+precount+ "\n" +"Absent:"+abscount+"\n"+"Absenties rollnos:"+absroll;
+    message= greeting()+"\n"+getHour() +"\n"+r11+"\n"+Date1+"\n"+Year2+"\n"+getSubject() +"\n"+getHost() + "\n" +getCoHost()+"\n"+"Present:"+precount+ "\n" +"Absent:"+abscount+"\n"+"Absenties rollnos:"+absroll;
 
 
 }
 
-function share() {
+function share(message) {
   
 
-    var message =getAbsenties();
+    
 
     
     window.open(
