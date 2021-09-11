@@ -143,12 +143,4 @@ function getAbsenties() {
 
 }
 
-function share() {
-  
 
-    
-
-    
-    window.open(
-        "whatsapp://send?text=" +message.replace(/\s\g,"%20") ,'_blank' );
-}
