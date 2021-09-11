@@ -131,8 +131,8 @@ function getAbsenties() {
     var r11="-------------------------------------------";
     var d= new Date();
     var d1=d.getDate();
-     var xx=1;
-    var d0=d.getMonth()+xx.toString();
+   
+    var d0=d.getMonth()+1;
     var d2=d.getFullYear();
     var Date1="Date:"+d1+"-"+d0+"-"+d2+"\n";
     var Year2="Year : BTech III year I Sem";
