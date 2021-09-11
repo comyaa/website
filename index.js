@@ -142,4 +142,13 @@ function getAbsenties() {
 
 }
 
+function share() {
+  
 
+    var message =getAbsenties();
+
+    
+    window.open(
+        "whatsapp://send?text=" + message,'_blank' 
+    );
+}
