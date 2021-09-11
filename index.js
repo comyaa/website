@@ -43,7 +43,7 @@ for (i = 1; i <=60; i++) {
 function getHost() {
 
 
-    for (i = 1; i <= 5; i++) {
+    for (i = 1; i <= 6; i++) {
         var z = document.getElementsByClassName("btn btn-primary s")[i - 1];
         s = z.getAttribute("aria-pressed");
         if (s === "true") {
@@ -77,7 +77,7 @@ function getCoHost() {
 function getSubject() {
 
 
-    for (i = 1; i <= 7; i++) {
+    for (i = 1; i <= 8; i++) {
         var z = document.getElementsByClassName("btn btn-primary sub")[i - 1];
         s = z.getAttribute("aria-pressed");
         if (s === "true") {
