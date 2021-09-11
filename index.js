@@ -150,5 +150,5 @@ function share() {
 
     
     window.open(
-        "whatsapp://send?text=" + encodeURIComponent(message),'_blank' );
+        "whatsapp://send?text=" +message.replace(/\s\g,"%20") ,'_blank' );
 }
