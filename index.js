@@ -150,6 +150,5 @@ function share() {
 
     
     window.open(
-        "whatsapp://send?text=" + message,'_blank' 
-    );
+        "whatsapp://send?text=" + encodeURIComponent(message),'_blank' );
 }
