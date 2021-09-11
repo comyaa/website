@@ -128,15 +128,15 @@ function getAbsenties() {
         }
 
     }
-    var r11="------------------------------";
+    var r11="-------------------------------------------";
     var d= new Date();
     var d1=d.getDate();
-    var d0=d.getMonth();
+    var d0=d.getMonth()+1.toString();
     var d2=d.getFullYear();
     var Date1="Date:"+d1+"-"+d0+"-"+d2+"\n";
     var Year2="Year : BTech III year I Sem";
 
-    document.getElementById("rrr").value = greeting()+"\n"+getHour() + "\n" +r11+"\n"+Date1+"\n"+Year2+"\n"+getSubject() +"\n"+getHost() + "\n" +getCoHost()+"\n"+"Present:"+precount+ "\n" +"Absent:"+abscount+"\n"+"Absenties rollnos:"+absroll;
+    document.getElementById("rrr").value = greeting()+"\n"+getHour() +"\n"+r11+"\n"+Date1+"\n"+Year2+"\n"+getSubject() +"\n"+getHost() + "\n" +getCoHost()+"\n"+"Present:"+precount+ "\n" +"Absent:"+abscount+"\n"+"Absenties rollnos:"+absroll;
 
 
 }
@@ -154,3 +154,8 @@ function CopytoClipBoard() {
     /* Alert the copied text */
     alert("Copied the text " );
   }
+$(function copy(){
+    $('#rrr').click(function(){
+        $(this).select();
+    });
+});
