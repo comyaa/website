@@ -140,7 +140,7 @@ function getAbsenties() {
 
 
 }
-function CopytoClipBoard() {
+function copy() {
     /* Get the text field */
     var copyText = document.getElementById("rrr");
   
@@ -154,8 +154,4 @@ function CopytoClipBoard() {
     /* Alert the copied text */
     alert("Copied the text " );
   }
-$(function copy(){
-    $('#rrr').click(function(){
-        $(this).select();
-    });
-});
+
